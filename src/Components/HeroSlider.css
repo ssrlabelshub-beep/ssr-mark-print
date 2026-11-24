@@ -1,0 +1,201 @@
+
+/* =====================================
+   MAIN HERO SLIDER
+===================================== */
+
+.hero-slider-section {
+  width: 100%;
+  height: calc(100dvh - 234px);
+  min-height: 350px;
+  max-height: 700px;
+  overflow: hidden;
+  background: #071e35;
+}
+
+.main-hero-swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main-hero-swiper .swiper-wrapper {
+  height: 100%;
+}
+
+.main-hero-swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+/* =====================================
+   HERO IMAGE CONTAINER
+===================================== */
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+/* =====================================
+   IMAGE ADJUSTMENT
+===================================== */
+
+.hero-slide-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+/* =====================================
+   CUSTOM LEFT AND RIGHT ARROWS
+===================================== */
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+
+  background: #ff7900;
+  color: #ffffff;
+
+  font-size: 23px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  outline: none;
+}
+
+.hero-prev {
+  left: 20px;
+}
+
+.hero-next {
+  right: 20px;
+}
+
+/* ARROW HOVER */
+
+.hero-arrow:hover {
+  background: #ffffff;
+  color: #ff7900;
+  border-color: #ff7900;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ARROW CLICK */
+
+.hero-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* KEYBOARD FOCUS */
+
+.hero-arrow:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* =====================================
+   PAGINATION DOTS
+===================================== */
+
+.main-hero-swiper .swiper-pagination {
+  bottom: 12px !important;
+}
+
+.main-hero-swiper .swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.7;
+  width: 9px;
+  height: 9px;
+}
+
+.main-hero-swiper .swiper-pagination-bullet-active {
+  background: #ff7900;
+  opacity: 1;
+  width: 23px;
+  border-radius: 10px;
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+  .hero-slider-section {
+    height: calc(100dvh - 190px);
+    min-height: 300px;
+  }
+
+  .hero-arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .hero-prev {
+    left: 12px;
+  }
+
+  .hero-next {
+    right: 12px;
+  }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+  .hero-slider-section {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero-slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .hero-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    border-width: 1px;
+  }
+
+  .hero-prev {
+    left: 7px;
+  }
+
+  .hero-next {
+    right: 7px;
+  }
+
+  .main-hero-swiper .swiper-pagination {
+    bottom: 8px !important;
+  }
+}
