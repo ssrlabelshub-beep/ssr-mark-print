@@ -726,7 +726,7 @@ function WhyIndustriesFooter() {
               <span className="wif-contact-icon">✉</span>
               <p>
                 <a href="mailto:sales@ssrmarkprint.in">
-                  sales@ssrmarkprint.in
+                  ssrlabelshub@gmail.com
                 </a>
               </p>
             </div>
@@ -735,11 +735,11 @@ function WhyIndustriesFooter() {
               <span className="wif-contact-icon">◎</span>
               <p>
                 <a
-                  href="https://www.ssrmarkprint.in"
+                  href="https://www.ssrbarcodelabels.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  www.ssrmarkprint.in
+                www.ssrbarcodelabels.com
                 </a>
               </p>
             </div>
